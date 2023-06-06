@@ -8,25 +8,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DTU Social</title>
 </head>
-<body class=" text-slate-800 dark:text-slate-200">
-    <nav class="absolute text-xl flex pl-12 pt-12 gap-8 list-none">
+<body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full">
+    <nav class="text-xl flex p-12 gap-8 list-none">
         <li class="bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold">DTU Social</li>
         <li><i class="fa-brands fa-github"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><a href="https://instagram.com/dtu.social/"><i class="fa-brands fa-instagram"></i></a></li>
         <li></li>
     </nav>
-    <div class="flex justify-center items-center h-screen w-full dark:bg-black">
-        <div class="mr-[10vw]">
-            <div class="text-slate-700 inline dark:text-slate-300 font-nonito text-4xl">
-                Make College your <div class="text-5xl inline font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF]  ">community</div>
+    <div class="flex md:flex-row flex-col justify-center items-center w-full">
+        <div class="md:w-[40vw] w-[80vw] mt-[7vh] ml-[10vw]">
+            <div class="text-slate-700 inline md:text-4xl text-2xl dark:text-slate-300 font-nonito">
+                Make College your <div class="inline font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF]  ">community</div>
             </div>
-            <div class="mt-4">
+            <div class="mt-4 md:text-md text-sm">
                 The platform you've been searching for to connect and grow in college
             </div>
+            <div class="flex-col mt-[2vh]">
+                <div>Sign up for the mailing list</div>
+                <input class=" mt-[1vh]" type="text">
+            </div>
         </div>
-        <img src="../static/final_website.png" alt="" srcset="" class="h-[70vh] aspect-square z-10">
-        <img src="../static/bg_gradient.svg" alt="" srcset="" class="absolute right-[20vh] top-[40vh] h-[40vh]">
+        <img src="../static/final_website_final.png" alt="" srcset="" class="md:h-[80vh] h-[40vh] md:mr-[10vw] z-10">
+        <img src="../static/bg_gradient.svg" alt="" srcset="" class="absolute right-[15vh] top-[15vh] h-[80vh]">
+
     </div>
-    
+    <footer class=" h-[10vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 flex flex-col items-center font-nonito ">
+        <div class="font-bold mt-10 ml-10 self-start">
+            DTU Social
+        </div>
+        <div class=" relative bottom-6">Made with ♥️ in DTU</div>
+    </footer>
 </body>
 </html>
