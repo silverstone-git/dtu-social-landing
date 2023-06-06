@@ -11,8 +11,9 @@
 <body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full">
     <nav class="text-xl flex p-12 gap-8 list-none">
         <li class="bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold">DTU Social</li>
-        <li><i class="fa-brands fa-github"></i></li>
-        <li><a href="https://instagram.com/dtu.social/"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://github.com/DTUSocial" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://instagram.com/dtu.social/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://instagram.com/dtu.social/" target="_blank"><i class="fa-brands fa-google-play"></i></a></li>
         <li></li>
     </nav>
     <div class="flex md:flex-row flex-col justify-center items-center w-full">
@@ -20,12 +21,15 @@
             <div class="text-slate-700 inline md:text-4xl text-2xl dark:text-slate-300 font-nonito">
                 Make College your <div class="inline font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF]  ">community</div>
             </div>
-            <div class="mt-4 md:text-md text-sm">
+            <div class="mt-4 md:text-lg text-md">
                 The platform you've been searching for to connect and grow in college
             </div>
             <div class="flex-col mt-[2vh]">
-                <div>Sign up for the mailing list</div>
-                <input class=" mt-[1vh]" type="text">
+                <form action="https://formspree.io/f/xoqzokja" method="POST">
+                    <div>Sign up for the mailing list</div>
+                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 pr-0" type="email" name="emailAddress" required>
+                    <button type="submit" class="inline dark:bg-[#1C1C1C] text-[#BCAEFF] font-bold rounded-r p-4 ml-0">Submit</button>
+                </form>
             </div>
         </div>
         <img src="../static/final_website_final.png" alt="" srcset="" class="md:h-[80vh] h-[40vh] md:mr-[10vw] z-10">
