@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>DTU Social</title>
 </head>
-<body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full">
+<body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full font-roboto">
     <nav class="text-xl flex justify-between p-12 gap-8 list-none font-light">
-        <li class="bg-clip-text justify-self-start text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold">DTU Social</li>
+        <li class="bg-clip-text justify-self-start text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold font-nunito">DTU Social</li>
         <div class="flex gap-8 ">
-        <li><a href="https://github.com/DTUSocial" target="_blank"><i class="fa-brands fa-github"></i><div class="md:inline hidden pl-4 ">Github</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" target="_blank"><i class="fa-brands fa-instagram"></i> <div class="md:inline hidden pl-4">Instagram</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" target="_blank"><i class="fa-brands fa-google-play"></i> <div class="md:inline hidden pl-4">Play Store</div></a></li>
+        <li><a href="https://github.com/DTUSocial" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-github"></i><div class="md:inline hidden pl-4 ">Github</div></a></li>
+        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-instagram"></i> <div class="md:inline hidden pl-4">Instagram</div></a></li>
+        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-google-play"></i> <div class="md:inline hidden pl-4">Play Store</div></a></li>
         </div>
     </nav>
     <div class="flex md:flex-row flex-col justify-center items-center w-full">
-        <div class="flex flex-col ">
-            <div class="md:w-[40vw] w-[80vw] md:mb-[6vh] md:mt-[7vh] mt-[15vh] ml-[10vw] ">
+        <div class="flex flex-col md:mb-[24vh]">
+            <div class="md:w-[40vw] w-[80vw] md:mt-[7vh] mb-[6vh] mt-[15vh] ml-[10vw] ">
                 <div class="text-slate-700 inline md:text-4xl sm:text-2xl text-xl dark:text-slate-300">
                     Make College your <div class="inline font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF]  ">community</div>
                 </div>
-                <div class="mt-4 md:text-lg sm:text-md text-sm">
+                <div class="mt-4 md:text-lg sm:text-md text-sm font-bold">
                     The platform you've been searching for to connect and grow in college
                 </div>
             </div>
@@ -31,20 +31,22 @@
             <div class="md:mt-0 md:ml-[10vw] md:mb-0 mb-24 md:self-auto self-center">
                 <form action="https://formspree.io/f/xoqzokja" method="POST">
                     <div>Sign up for the mailing list</div>
-                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 pr-0 w-48 sm:w-auto" type="email" name="emailAddress" required>
+                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 pr-0 w-[70vw] md:w-48" type="email" name="emailAddress" required>
                     <button type="submit" class="inline dark:bg-[#1C1C1C] text-[#BCAEFF] font-bold rounded-r p-4 ml-0">Submit</button>
                 </form>
             </div>
         </div>
         <img src="./static/final_website_final.png" alt="" srcset="" class="md:h-[80vh] h-[60vh] my-48 hidden md:block md:mt-[5vh] md:mr-[10vw]">
-        <img src="./static/bg_gradient.svg" alt="" srcset="" class="absolute md:right-[15vh] right-0 bottom-7 -z-10 md:bottom-0 h-screen">
+        <div class=" fixed flex justify-center content-center md:right-[15vh] -z-10 bottom-0 md:mb-0 h-[160vh] md:bottom-0 md:h-[200vh] opacity-60">
+            <img src="./static/bg_gradient.svg" alt="" srcset="" class=" h-full">
+        </div>
 
     </div>
-    <footer class=" h-[10vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 flex flex-col md:items-center items-end ">
-        <div class="font-bold mt-10 ml-10 self-start">
+    <footer class=" h-[15vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 flex flex-col md:items-center items-end ">
+        <div class="font-bold font-nunito relative top-12 md:top-16 ml-10 self-start">
             DTU Social
         </div>
-        <div class=" relative bottom-6 md:mr-0 mr-10">Made with ♥️ in DTU</div>
+        <div class=" relative top-6 self-end md:top-10 md:mr-10 mr-10">Made with ♥️ in DTU</div>
     </footer>
 </body>
 </html>
