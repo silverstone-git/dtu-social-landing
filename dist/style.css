@@ -530,6 +530,10 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
 .relative{
   position: relative;
 }
@@ -638,6 +642,10 @@ video {
 
 .mb-64{
   margin-bottom: 16rem;
+}
+
+.mt-36{
+  margin-top: 9rem;
 }
 
 .inline{
@@ -817,6 +825,30 @@ video {
 
 .pr-0{
   padding-right: 0px;
+}
+
+.pt-36{
+  padding-top: 9rem;
+}
+
+.pt-\[20vh\]{
+  padding-top: 20vh;
+}
+
+.pt-\[30vh\]{
+  padding-top: 30vh;
+}
+
+.pl-\[10vw\]{
+  padding-left: 10vw;
+}
+
+.pl-\[50vw\]{
+  padding-left: 50vw;
+}
+
+.pt-\[50vh\]{
+  padding-top: 50vh;
 }
 
 .font-roboto{
@@ -1039,6 +1071,10 @@ video {
 
   .md\:self-auto{
     align-self: auto;
+  }
+
+  .md\:pt-0{
+    padding-top: 0px;
   }
 
   .md\:text-4xl{
