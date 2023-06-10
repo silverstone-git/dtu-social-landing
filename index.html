@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>DTU Social</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>dtu.social</title>
 </head>
 <body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full font-roboto">
-    <nav class="text-xl flex justify-between p-12 gap-8 list-none font-light">
-        <li class="bg-clip-text justify-self-start text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold font-nunito">DTU Social</li>
+    <nav class="text-xl flex justify-between p-12 list-none font-light">
+        <li class="bg-clip-text justify-self-start text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold font-nunito">dtu.social</li>
         <div class="flex gap-8 ">
-        <li><a href="https://github.com/DTUSocial" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-github"></i><div class="md:inline hidden pl-4 ">Github</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-instagram"></i> <div class="md:inline hidden pl-4">Instagram</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-google-play"></i> <div class="md:inline hidden pl-4">Play Store</div></a></li>
+        <li><a href="https://ekakshjanweja.notion.site/About-Us-b2b53ad56a544772a9e9ade675dc837d?pvs=4" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-user fa-solid"></i><div class="md:inline hidden pl-2 ">About Us</div></a></li>
+        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-instagram"></i> <div class="md:inline hidden pl-2">Instagram</div></a></li>
+        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-google-play"></i> <div class="md:inline hidden pl-2">Playstore</div></a></li>
         </div>
     </nav>
     <div class="flex md:flex-row flex-col justify-center items-center w-full">
@@ -31,8 +32,8 @@
             <div class="md:mt-0 md:ml-[10vw] md:mb-0 mb-24 md:self-auto self-center">
                 <form action="https://formspree.io/f/xoqzokja" method="POST">
                     <div>Sign up for the mailing list</div>
-                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 pr-0 w-[70vw] md:w-48" type="email" name="emailAddress" required>
-                    <button type="submit" class="inline dark:bg-[#1C1C1C] text-[#BCAEFF] font-bold rounded-r p-4 ml-0">Submit</button>
+                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 right-0 pr-0 w-[70vw] md:w-48" type="email" name="emailAddress" required>
+                    <button type="submit" class="inline dark:bg-[#1C1C1C] text-[#BCAEFF] font-bold rounded-r left-0 p-4 ml-0 -translate-x-2">Submit</button>
                 </form>
             </div>
         </div>
@@ -42,11 +43,17 @@
         </div>
 
     </div>
-    <footer class=" h-[15vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 flex flex-col md:items-center items-end ">
-        <div class="font-bold font-nunito relative top-12 md:top-16 ml-10 self-start">
-            DTU Social
+    <footer class=" md:h-[18vh] h-[20vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 ">
+        <div class="flex flex-col items-end ">
+            <div class="font-bold font-nunito relative top-12 ml-10 self-start text-2xl">
+                dtu.social
+            </div>
+            <div class=" relative self-center top-[4.5rem] text-lg">Made with ♥️ in DTU</div>
         </div>
-        <div class=" relative top-6 self-end md:top-10 md:mr-10 mr-10">Made with ♥️ in DTU</div>
+        <div class="flex flex-col relative top-12 text-lg">
+            <div class=" self-start opacity-30 ml-10">stormej</div>
+            <div class=" self-end opacity-30 relative bottom-8 mr-10">cyto</div>
+        </div>
     </footer>
 </body>
 </html>
