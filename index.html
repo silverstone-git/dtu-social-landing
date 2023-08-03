@@ -1,59 +1,66 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>dtu.social</title>
+    <script>
+
+        function expandSideNav() {
+          document.getElementById("sideNav").style.width="250px";
+          document.getElementById("closeButtonLink").style.width="auto";
+          document.getElementById("closeButtonLink").style.display="block";
+          document.getElementById("closeButton").style.visibility="visible";
+          document.getElementById("sideNav").style.display="flex";
+          document.getElementById("sideNav").style.position="absolute";
+          document.getElementById("closeButton").style.display="flex";
+          document.getElementById("nav-expander").style.display="none";
+        }
+        function closeSideNav() {
+          document.getElementById("sideNav").style.width="0";
+          document.getElementById("sideNav").style.display="none";
+          document.getElementById("closeButton").style.display="block";
+          document.getElementById("closeButton").style.visibility="invisible";
+          document.getElementById("closeButtonLink").style.display="none";
+          document.getElementById("nav-expander").style.display="flex";
+        }
+    </script>
 </head>
-<body class=" text-slate-800 dark:text-slate-200  dark:bg-black  h-screen w-full font-roboto">
-    <nav class="text-xl flex justify-between p-12 list-none font-light">
-        <li class="bg-clip-text justify-self-start text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF] font-extrabold font-nunito">dtu.social</li>
-        <div class="flex gap-8 ">
-        <li><a href="https://ekakshjanweja.notion.site/About-Us-b2b53ad56a544772a9e9ade675dc837d?pvs=4" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-user fa-solid"></i><div class="md:inline hidden pl-2 ">About Us</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-instagram"></i> <div class="md:inline hidden pl-2">Instagram</div></a></li>
-        <li><a href="https://instagram.com/dtu.social/" class="hover:text-[#7B61FF]" target="_blank"><i class="fa-brands fa-google-play"></i> <div class="md:inline hidden pl-2">Playstore</div></a></li>
-        </div>
-    </nav>
-    <div class="flex md:flex-row flex-col justify-center items-center w-full">
-        <div class="flex flex-col md:mb-[24vh]">
-            <div class="md:w-[40vw] w-[80vw] md:mt-[7vh] mb-[6vh] mt-[15vh] ml-[10vw] ">
-                <div class="text-slate-700 inline md:text-4xl sm:text-2xl text-xl dark:text-slate-300">
-                    Make College your <div class="inline font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7B61FF] to-[#BCAEFF]  ">community</div>
-                </div>
-                <div class="mt-4 md:text-lg sm:text-md text-sm font-bold">
-                    The platform you've been searching for to connect and grow in college
-                </div>
+<body>
+    <div class="bg-black font-nunito text-[#EADDFF] h-screen w-screen overflow-x-hidden">
+        <nav id="navbar" class="flex justify-between w-full px-[8.333%] pt-[4vh] md:pt-[2vh] items-center">
+            <div class=" font-black text-3xl">dtu.social</div>
+            <div onclick="expandSideNav()" id="nav-expander" class="text-lg font-black block md:hidden z-10"><i class="fa-solid fa-bars"></i></div>
+            <div id="sideNav" class="text-lg gap-8 items-center hidden md:flex flex-col md:flex-row md:bg-transparent bg-[#6750A4] w-[30vh] md:w-auto h-screen md:h-auto top-0 md:top-auto right-0 md:right-auto z-10 md:pt-0 pt-[10vh]">
+                <div onclick="closeSideNav()" id="closeButton" class="block md:hidden z-10 top-[5vh] right-[4vh] absolute"><i id="closeButtonLink" class="fa-solid fa-xmark"></i></div>
+                <a class="flex items-center gap-2" href="https://www.instagram.com/dtu.social/" target="_blank"> <i class="fa-brands fa-instagram "></i> <div>INSTAGRAM</div>  </a>
+                <a class="flex items-center gap-2" href="https://ekakshjanweja.notion.site/About-Us-b2b53ad56a544772a9e9ade675dc837d?pvs=4" target="_blank"> <i class="fa-solid fa-user "></i> <div>ABOUT US</div>  </a>
+                <a class="md:p-4 p-0 bg-[#6750A4] rounded-full flex md:gap-4 gap-2 items-center" href="https://play.google.com/store/apps/details?id=com.app.dtusocial" target="_blank"> <i class="fa-brands fa-google-play"></i> <div>PLAYSTORE</div> </a>
             </div>
-            <img src="./static/final_website_final.png" alt="" srcset="" class="md:h-[80vh] my-16 md:hidden md:mt-[5vh] md:mr-[10vw]">
-            <div class="md:mt-0 md:ml-[10vw] md:mb-0 mb-24 md:self-auto self-center">
-                <form action="https://formspree.io/f/xoqzokja" method="POST">
-                    <div>Sign up for the mailing list</div>
-                    <input class=" mt-[1vh] inline rounded-l dark:bg-[#1C1C1C] dark:text-[BCAEFF] p-4 mr-0 right-0 pr-0 w-[70vw] md:w-48" type="email" name="emailAddress" required>
-                    <button type="submit" class="inline dark:bg-[#1C1C1C] text-[#BCAEFF] font-bold rounded-r left-0 p-4 ml-0 -translate-x-2">Submit</button>
-                </form>
+        </nav>
+        <section class="bg-black">
+            <div class="flex flex-col items-center md:pt-[5vh] pt-[10vh]">
+                <div class=" text-2xl md:text-6xl font-black ">Find your Tribe.</div>
+                <div class=" text-sm md:text-2xl font-black text-[#EDE8FD] md:pt-7 pt-14 px-[3vh] md:px-0">The app you were searching for to find new college mates 🤜🤛</div>
+                <div class=" w-[200vw] h-auto -translate-x-0 md:-translate-y-60 md:h-[122vh] md:w-auto"><img src="./static/bg.svg"></div>
             </div>
-        </div>
-        <img src="./static/final_website_final.png" alt="" srcset="" class="md:h-[80vh] h-[60vh] my-48 hidden md:block md:mt-[5vh] md:mr-[10vw]">
-        <div class=" absolute flex justify-center content-center md:right-[15vh] pt-[50vh] md:pt-0 -z-10 bottom-0 md:mb-0 h-[160vh] md:bottom-0 md:h-[200vh] opacity-60">
-            <img src="./static/bg_gradient.svg" alt="" srcset="" class=" h-full">
-        </div>
+        </section>
+        <footer>
+           <div class="flex justify-between w-full bg-[#6750A44D] rounded-l-2xl rounded-r-2xl py-16 px-[8.333%] z-10">
+                <div class="font-black text-2xl">dtu.social</div>
+                <div class="hidden md:block">
+                    Made with ❤️ in DTU
+                </div>
+                <div class="flex gap-6 text-2xl font-black">
+                    <a href="https://www.instagram.com/dtu.social/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://ekakshjanweja.notion.site/About-Us-b2b53ad56a544772a9e9ade675dc837d?pvs=4" target="_blank"><i class="fa-solid fa-user"></i></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.app.dtusocial" target="_blank"><i class="fa-brands fa-google-play"></i></a>
+                </div>
+           </div> 
+        </footer>
 
     </div>
-    <footer class=" md:h-[18vh] h-[20vh] rounded bg-[#615986] text-[#EADDFF] bottom-0 ">
-        <div class="flex flex-col items-end ">
-            <div class="font-bold font-nunito relative top-12 ml-10 self-start text-2xl">
-                dtu.social
-            </div>
-            <div class=" relative self-center top-[4.5rem] text-md md:text-lg">Made with ♥️ in DTU</div>
-        </div>
-        <div class="flex flex-col relative top-12 text-sm md:text-lg">
-            <div class=" self-start opacity-30 ml-10">stormej</div>
-            <div class=" self-end opacity-30 relative bottom-5 mr-10">cyto</div>
-        </div>
-    </footer>
 </body>
 </html>
